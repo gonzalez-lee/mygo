@@ -36,6 +36,4 @@ func main() {
 
 	字符串 := "hello"
 	fmt.Println(字符串)
-
-	fmt.Printf("%s", 字符串)
 }

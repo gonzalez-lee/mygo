@@ -34,6 +34,6 @@ func main() {
 
 	fmt.Printf("%s", stringutil.SubStr("日本语", 1))
 
-	字符串 := "hello1"
+	字符串 := "hello"
 	fmt.Println(字符串)
 }

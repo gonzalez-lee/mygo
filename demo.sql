@@ -1,0 +1,1 @@
+select name, file_name from sys_sql_define

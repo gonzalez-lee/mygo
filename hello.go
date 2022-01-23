@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/gonzalez_lee/mygo/bean"
-	"github.com/gonzalez_lee/mygo/chatbot"
-	"github.com/gonzalez_lee/mygo/control"
-	"github.com/gonzalez_lee/mygo/stringutil"
+	"github.com/gonzalez-lee/mygo/bean"
+	"github.com/gonzalez-lee/mygo/chatbot"
+	"github.com/gonzalez-lee/mygo/control"
+	"github.com/gonzalez-lee/mygo/stringutil"
 )
 
 func testInter(ai chatbot.AI) {
@@ -33,7 +33,8 @@ func sum1() {
 	fmt.Println(x, y, x+y)
 }
 
-func main() {
+// TestGoFunc is used to test go features.
+func TestGoFunc() {
 	andy := fmt.Sprintf("%s, %d", "Andy", 35)
 	fmt.Println(andy)
 	sum1()

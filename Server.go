@@ -5,7 +5,11 @@ package main
 import (
 	"log"
 	"net"
-	pb "github.com/gonzalez_lee/mygo/helloworld"
+
+	pb "github.com/gonzalez-lee/mygo/helloworld"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/reflection"
 )
 
 const (
@@ -18,6 +22,11 @@ type server struct{}
 // SayHello implements helloworld.GreeterServer
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
 	return &pb.HelloReply{Message: "Hello " + in.Name}, nil
+}
+
+// SayHello implements helloworld.GreeterServer
+func (s *server) SayHelloAgain(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
+	return &pb.HelloReply{Message: "Hello Again " + in.Name}, nil
 }
 
 func main() {
